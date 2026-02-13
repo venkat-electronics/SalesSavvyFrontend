@@ -44,7 +44,7 @@ export default function CustomerHomePage() {
   const fetchCartCount = async () => {
     setIsCartLoading(true); // Set loading state
     try {
-      const response = await fetch(`http://localhost:9090/api/cart/items/count?username=${username}`, {
+      const response = await fetch(`http://localhost:8085/api/cart/items/count?username=${username}`, {
         credentials: 'include', // Include authToken as a cookie
       });
       const count = await response.json();

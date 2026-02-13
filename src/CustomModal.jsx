@@ -539,7 +539,7 @@ const ModifyUserFormComponent = ({ onClose }) => {
     const email = formData.get("email");
     const role = formData.get("role");
 
-    const response = await fetch("http://localhost:9090/admin/user/modify", {
+    const response = await fetch("http://localhost:8085/admin/user/modify", {
       method: "PUT",
       credentials: "include",
       headers: {

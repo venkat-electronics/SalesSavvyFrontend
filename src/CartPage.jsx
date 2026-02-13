@@ -15,7 +15,7 @@ const CartPage = () => {
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
-        const response = await fetch("http://localhost:9090/api/cart/items", {
+        const response = await fetch("http://localhost:8085/api/cart/items", {
           credentials: "include", // Include session cookie
         });
         if (!response.ok) throw new Error("Failed to fetch cart items");

@@ -66,7 +66,7 @@ const AdminDashboard = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:9090/api/auth/logout", {
+      const response = await fetch("http://localhost:8085/api/auth/logout", {
         method: "POST",
         credentials: "include",
       });
